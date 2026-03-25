@@ -1,2 +1,2 @@
-# automotolog.github.io
-website
+# automotolog
+automotolog website

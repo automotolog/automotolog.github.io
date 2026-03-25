@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoMotoLog - Vehicle Maintenance Tracker</title>
+    <meta name="description" content="AutoMotoLog: Track vehicle maintenance, service history, costs, and document reminders — all in one place.">
+    <link rel="icon" type="image/jpeg" href="images/logo.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- SVG Sprite (hidden) -->
+    <div aria-hidden="true" style="display:none">
+        <object data="svg/sprites.svg" type="image/svg+xml"></object>
+    </div>
+
+    <!-- ─── HEADER ──────────────────────────────────────── -->
+    <header>
+        <div class="header-inner">
+            <a href="#" class="logo-group">
+                <img src="images/logo.jpg" alt="AutoMotoLog" class="logo-img">
+                <span class="logo-name">AutoMotoLog</span>
+            </a>
+            <div class="header-right">
+                <div class="lang-switcher">
+                    <button id="lang-el" class="lang-btn" onclick="setLanguage('el')">EL</button>
+                    <button id="lang-en" class="lang-btn" onclick="setLanguage('en')">EN</button>
+                </div>
+                <a href="https://play.google.com/store/apps/details?id=com.automotolog.app"
+                   class="header-cta" target="_blank" rel="noopener noreferrer">
+                    <svg class="icon" aria-hidden="true">
+                        <use href="svg/sprites.svg#google-play"></use>
+                    </svg>
+                    <span data-translate="headerCta">Google Play</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- ─── HERO ────────────────────────────────────────── -->
+    <section class="hero">
+<div class="hero-inner">
+            <div class="hero-badge">
+                <svg class="icon" aria-hidden="true">
+                    <use href="svg/sprites.svg#icon-layers"></use>
+                </svg>
+                <span data-translate="badgeText">Vehicle Maintenance</span>
+            </div>
+
+            <h1>
+                <span data-translate="heroTitle">Organize Your Vehicle</span><br>
+                <span data-translate="heroTitleAccent">Without the Stress</span>
+            </h1>
+
+            <p class="hero-sub" data-translate="heroSub">
+                Stop worrying about service dates, annual inspections, and unexpected costs.
+                AutoMotoLog keeps everything in order, so you always know what's next.
+            </p>
+
+            <div class="hero-actions">
+                <a href="https://play.google.com/store/apps/details?id=com.automotolog.app"
+                   class="btn-primary" target="_blank" rel="noopener noreferrer">
+                    <svg class="icon" aria-hidden="true">
+                        <use href="svg/sprites.svg#google-play"></use>
+                    </svg>
+                    <span data-translate="heroBtn">Download on Google Play</span>
+                </a>
+            </div>
+
+            <div class="hero-stats">
+                <div class="hero-stat">
+                    <span class="hero-stat-val" data-translate="stat1Val">Free</span>
+                    <span class="hero-stat-label" data-translate="stat1Label">Download</span>
+                </div>
+                <div class="hero-stat">
+                    <span class="hero-stat-val">Android</span>
+                    <span class="hero-stat-label" data-translate="stat2Label">Platform</span>
+                </div>
+                <div class="hero-stat">
+                    <span class="hero-stat-val">EV + ICE</span>
+                    <span class="hero-stat-label" data-translate="stat3Label">Vehicle Types</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ─── FEATURES ────────────────────────────────────── -->
+    <section class="section features-bg">
+        <div class="section-inner">
+            <div class="section-head">
+                <p class="section-label" data-translate="featLabel">Features</p>
+                <h2 class="section-title" data-translate="featTitle">Everything your vehicle needs</h2>
+                <p class="section-sub" data-translate="featSub">
+                    Designed for drivers who value their time and want complete visibility
+                    over their vehicle's condition.
+                </p>
+            </div>
+            <div class="features-grid">
+
+                <div class="feature-card">
+                    <div class="feature-icon-wrap">
+                        <svg class="icon" aria-hidden="true">
+                            <use href="svg/sprites.svg#icon-dashboard"></use>
+                        </svg>
+                    </div>
+                    <h3 data-translate="f1Title">Smart Dashboard</h3>
+                    <p data-translate="f1Desc">
+                        At a glance, see every part nearing the end of its service life —
+                        not just your next oil change. Prioritize exactly what needs attention.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon-wrap">
+                        <svg class="icon" aria-hidden="true">
+                            <use href="svg/sprites.svg#icon-calendar"></use>
+                        </svg>
+                    </div>
+                    <h3 data-translate="f2Title">Document Reminders</h3>
+                    <p data-translate="f2Desc">
+                        Color-coded alerts for MOT (KTEO), insurance, and registration renewals.
+                        Never pay a late fee again.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon-wrap">
+                        <svg class="icon" aria-hidden="true">
+                            <use href="svg/sprites.svg#icon-cost"></use>
+                        </svg>
+                    </div>
+                    <h3 data-translate="f3Title">Detailed Cost Tracking</h3>
+                    <p data-translate="f3Desc">
+                        Log parts and labor separately for every job. Understand the true
+                        cost of ownership with clear, itemized history.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon-wrap">
+                        <svg class="icon" aria-hidden="true">
+                            <use href="svg/sprites.svg#icon-ev"></use>
+                        </svg>
+                    </div>
+                    <h3 data-translate="f4Title">Electric Vehicle Support</h3>
+                    <p data-translate="f4Desc">
+                        Full EV compatibility with kWh-based metrics and dedicated filters
+                        for electric drivetrains. Built for modern fleets.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ─── SCREENSHOTS ──────────────────────────────────── -->
+    <section class="section screenshots-bg">
+        <div class="section-inner">
+            <div class="section-head">
+                <p class="section-label" data-translate="screenLabel">Screenshots</p>
+                <h2 class="section-title" data-translate="screenTitle">See it in action</h2>
+                <p class="section-sub" data-translate="screenSub">
+                    A clean, focused interface that gets out of your way and surfaces
+                    the information you actually need.
+                </p>
+            </div>
+            <div class="screenshot-grid">
+                <div class="screenshot-item">
+                    <img src="images/1.jpg" alt="AutoMotoLog — Dashboard" loading="lazy">
+                </div>
+                <div class="screenshot-item">
+                    <img src="images/2.jpg" alt="AutoMotoLog — Maintenance Log" loading="lazy">
+                </div>
+                <div class="screenshot-item">
+                    <img src="images/3.jpg" alt="AutoMotoLog — Cost Tracking" loading="lazy">
+                </div>
+                <div class="screenshot-item">
+                    <img src="images/4.jpg" alt="AutoMotoLog — Document Reminders" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ─── CTA STRIP ────────────────────────────────────── -->
+    <section class="cta-strip">
+        <div class="cta-strip-inner">
+            <h2 data-translate="ctaTitle">Ready to take control?</h2>
+            <p data-translate="ctaSub">
+                Download AutoMotoLog for free and start tracking your vehicle's maintenance today.
+            </p>
+            <a href="https://play.google.com/store/apps/details?id=com.automotolog.app"
+               class="btn-white" target="_blank" rel="noopener noreferrer">
+                <svg class="icon" aria-hidden="true">
+                    <use href="svg/sprites.svg#google-play"></use>
+                </svg>
+                <span data-translate="ctaBtn">Download on Google Play</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- ─── FOOTER ───────────────────────────────────────── -->
+    <footer>
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <img src="images/logo.jpg" alt="AutoMotoLog logo">
+                <span>AutoMotoLog</span>
+            </div>
+            <div class="footer-links">
+                <a href="https://play.google.com/store/apps/details?id=com.automotolog.app"
+                   target="_blank" rel="noopener noreferrer" data-translate="footerPlay">Google Play</a>
+                <a href="app-ads.txt">app-ads.txt</a>
+            </div>
+            <p class="footer-copy">
+                &copy; <span id="year"></span> AutoMotoLog.
+                <span data-translate="footerRights">All rights reserved.</span>
+                &nbsp;&nbsp;|&nbsp;&nbsp;
+                <span data-translate="footerMadeIn">Made in Greece.</span>
+            </p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
